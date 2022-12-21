@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/back"
+    android:elevation="20dp"
+    android:layout_marginTop="10dp"
+android:id="@+id/movie_item"
+
+
+    >
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/description1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/score"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="top|end"
+        android:text="0/10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/title_tv"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="top|center"
+        android:text="nazvanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+<ImageView
+    android:scaleType="fitXY"
+    android:id="@+id/image_v"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="20dp"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    />
+</androidx.cardview.widget.CardView>
