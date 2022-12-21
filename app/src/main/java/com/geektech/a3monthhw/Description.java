@@ -17,8 +17,8 @@ ImageView image;
         description =findViewById(R.id.description_desc);
         title = findViewById(R.id.title_desc);
         image = findViewById(R.id.image_desc);
-        description.setText(getIntent().getStringExtra(String.valueOf(description)));
-        title.setText(getIntent().getStringExtra(String.valueOf(title)));
+        description.setText(getIntent().getStringExtra("description"));
+        title.setText(getIntent().getStringExtra("title"));
         image.setImageResource(getIntent().getIntExtra("src", -1));
     }
 }

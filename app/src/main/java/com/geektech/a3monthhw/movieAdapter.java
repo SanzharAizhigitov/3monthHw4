@@ -25,6 +25,10 @@ movieItemClickListener clickListener;
     @Override
     public void onBindViewHolder(@NonNull movieViewHolder holder, int position) {
 holder.bind(movieList.get(position).image, movieList.get(position).title, movieList.get(position).score, movieList.get(position).description);
+holder.cardView.setOnClickListener(view -> {
+    clickListener.onClickItem(movieList.get(position));
+        }
+);
     }
 
     @Override

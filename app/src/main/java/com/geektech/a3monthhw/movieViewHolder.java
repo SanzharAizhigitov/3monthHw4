@@ -5,6 +5,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class movieViewHolder extends RecyclerView.ViewHolder {
@@ -13,6 +14,7 @@ public class movieViewHolder extends RecyclerView.ViewHolder {
     TextView score;
     TextView description;
     ImageView imageView;
+    CardView cardView;
 
 
 
@@ -22,6 +24,7 @@ public class movieViewHolder extends RecyclerView.ViewHolder {
         description = itemView.findViewById(R.id.description1);
         score = itemView.findViewById(R.id.score);
         imageView = itemView.findViewById(R.id.image_v);
+        cardView = itemView.findViewById(R.id.movie_item);
     }
     public void bind(int image, String title1, String score1, String description1){
 imageView.setImageResource(image);
